@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "postcss styles.css -o static/tailwind/tailwind.css --watch",
-    "build": "postcss ../**/tailwind.css -d static/tailwind --env production"
+    "start": "postcss ./styles.css -o ./static/tailwind/tailwind.css --watch",
+    "build": "postcss ./tailwind.css -d static/tailwind --env production"
   },
   "author": "",
   "license": "ISC",
