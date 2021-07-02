@@ -81,3 +81,12 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+
+
+// disable right click on images
+$(document).ready(function() {
+  $("img").on("contextmenu",function(){
+     return false;
+  }); 
+});
