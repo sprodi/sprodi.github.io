@@ -96,6 +96,16 @@ module.exports = {
                   transform: 'translateX(0)',
                },
             },
+            'fadeInUp': {
+               '0%': { 
+                  opacity: '0', 
+                  transform: 'translateY(60px)',
+               },
+               '100%': { 
+                  opacity: '1',
+                  transform: 'translateY(0)',
+               },
+            },
          },
          animation: {
             'menu-down': 'menu-down 0.75s ease-in-out',
@@ -103,6 +113,7 @@ module.exports = {
             'fade-in-down': 'fade-in-down 1.5s ease-in-out',
             'cc1': 'cc1 8s ease-in-out infinite',
             'cc2': 'cc2 8s ease-in-out infinite',
+            'fadeInUp': 'fadeInUp .75s ease-in forwards',
             'fadeInRight': 'fadeInRight .75s ease-in forwards',
          },
    },
