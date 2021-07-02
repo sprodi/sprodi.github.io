@@ -1,11 +1,12 @@
 {
-  "name": "django-tailwind",
+  "name": "tailwindpostcss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "postcss ./styles.css -o ./static/tailwind/tailwind.css --watch",
-    "build": "postcss ./tailwind.css -d static/tailwind --env production"
+    "build": "postcss ./tailwind.css -d static/tailwind --env production",
+    "prod": "cross-env NODE_ENV=production postcss ./styles.css -o ./static/tailwind/tailwind.css"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +16,8 @@
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }
