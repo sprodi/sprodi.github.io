@@ -1,0 +1,19 @@
+{
+  "name": "django-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "postcss styles.css -o static/tailwind/tailwind.css --watch",
+    "build": "postcss ../**/tailwind.css -d static/tailwind --env production"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://sprodi.github.io/seanrpodi",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4"
+  }
+}
