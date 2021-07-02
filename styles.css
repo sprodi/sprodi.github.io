@@ -39,7 +39,7 @@ $tertiary-color: #ffffff;
    }
 
    .skills {
-      width: 125px;
+      @apply w-14 sm:w-20 md:w-24 mx-auto;
    }
 
    #button {
