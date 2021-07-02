@@ -21,16 +21,26 @@ $tertiary-color: #ffffff;
       height: 220px;
       position: relative;
    }
+   
+   .name {
+      @apply text-black !important;
+   }
 
    .card-button {
-      @apply bg-gray-200 font-semibold hover:bg-blue-700 rounded text-black hover:text-white;
+      @apply bg-gray-200 font-semibold hover:bg-blue-700 rounded text-black hover:text-white lg:h-12;
+   }
+
+   .card-title {
+      @apply text-sm px-6 py-6 text-white w-1/2 h-full lg:text-lg lg:w-1/2 lg:h-full lg:content-center max-w-2xl relative flex flex-wrap content-center;
+   }
+
+   .card-desc {
+      @apply mt-2 leading-5 lg:leading-normal;
    }
 
    .skills {
       width: 125px;
    }
-
-
 
    #button {
       display: inline-block;

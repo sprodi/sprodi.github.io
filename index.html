@@ -16,10 +16,10 @@
    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 </head>
 
-<body class="dark:bg-gray-700 dark:text-white">
-   <header x-data="{ mobileMenuOpen : false }" class="bg-white flex flex-wrap flex-row justify-between md:space-x-4 dark:bg-trueGray-700 py-6 px-6 relative">
-      <a href="/" class="block">
-        <span class="text-right text-4xl dark:text-white uppercase font-light tracking-widest">Sean Prodi</span>
+<body class="dark:bg-gray-700 text-black dark:text-white lg:max-w-7xl lg:mx-auto">
+   <header x-data="{ mobileMenuOpen : false }" class="bg-white flex flex-wrap flex-row justify-between md:space-x-4 dark:bg-gray-700 py-6 px-6 relative">
+      <a href="/" class="block ">
+        <span class="text-4xl uppercase font-light tracking-widest">Sean Prodi</span>
       </a>
       
       <button id="switchTheme" class="md:hidden h-10 w-10 flex justify-center items-center focus:outline-none"><i class="text-2xl text-gray-500 fas fa-toggle-off"></i>
@@ -39,149 +39,167 @@
          </button>
       </nav>
    </header>
+   <div class="md:grid md:grid-cols-2 md:gap-2 md:max-w-7xl md:mx-auto">
+      <div class="intro md:col-span-2 lg:col-span-1">
+         <!-- INTRO  -->
+         <div class="px-3 mx-auto max-w-2xl md:mt-8">
+            <img draggable="false" src="static/sean-blue.jpg" class="rounded-xl -mb-13">
+         </div>
+      </div>
+
+         <div class="text-lg md:text-2xl md:col-span-2 lg:col-span-1 px-6 py-6 dark:text-white mx-auto max-w-2xl animate-fade-in-down">
+            <h1 class="text-5xl text-white dark:text-white md:text-white lg:text-black font-semibold mb-2">Hi I'm Sean!</h1><p class="text-3xl md:text-4xl leading-snug md:leading-snug font-bold"><span class="bg-trueGray-900 bg-opacity-70 text-white animate-cc2 px-2 rounded">Graphic Designer </span><br><span class="px-2 animation-delay bg-trueGray-900 bg-opacity-70 text-white animate-cc2 rounded">Full Stack Developer</span></p>
+            <p class="mt-6 leading-8">
+               Based in Southern California, I have been working professionally as a Graphic Designer from San Diego to Los Angeles since 2015.
+            </p> 
+         </div>
+         <!-- SOCIAL -->
+         <div class="py-4 flex items-center justify-center md:col-span-2 lg:col-span-1 lg:col-start-2 lg:justify-center">
+            <div class="text-2xl md:text-4xl grid grid-flow-col auto-cols-max gap-12 md:mt-0 md:pb-16">
+               <div class="hover:text-pink-500"><a href="https://www.instagram.com/seanprodi" target="_blank"><i class="fab fa-instagram"></i></a></div>
+               <div class="hover:text-green-500"><a href="https://github.com/sprodi/" target="_blank"><i class="fab fa-github"></i></a></div>
+               <div class="hover:text-blue-500"><a href="http://www.linkedin.com/in/seanprodi" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+               <div class="hover:text-yellow-500"><a href="mailto:seanprodi@gmail.com" target="_blank"><i class="fas fa-at"></i></a></div>
+            </div>
+         </div>
+      
+
+         <div class="md:hidden flex items-center justify-center h-36 text-black dark:text-white">
+            <a href="#projects">
+               <div class="animate-bounce text-center">
+                  Scroll
+                  <p class="text-4xl"><i class="fas fa-caret-down"></i></p>
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+               </div>
+            </a>
+         </div> 
+      </div>
+
+      <div class="projects md:col-span-2 lg:mt-20 md:flex md:max-w-7xl md:mx-auto">
+         <div id="projects"></div>
+         <div class="md:w-full">
+            <div class="text-sm md:text-2xl px-6 py-6 md:-mt-20 md:py-10 dark:text-white mx-auto max-w-2xl lg:max-w-full">
+               <h1 class="title text-5xl text-blue-400 font-semibold mb-2 lg:flex lg:justify-center">Projects</h1>
+               <div class="mt-5 grid grid-cols-3 gap-3 lg:px-20 lg:gap-5 lg:mt-10 lg:w-full">
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#plantr" class="block py-1 ">Plantr</a></button>
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#moves" class="block py-1 ">Moves</a></button>
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#misc" class="block py-1 h">Misc.</a></button>
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#freelance" class="block py-1 ">Freelance</a></button>
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#merch" class="block py-1 ">Merch.</a></button>
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#logos" class="block py-1 ">Logos</a></button>
+                  <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#blender" class="block py-1 ">Blender</a></button>
+               </div>
+            </div>
+         </div>
+      </div>
    
-   <div class="px-3 mx-auto max-w-2xl">
-      <img draggable="false" src="static/sean-blue.jpg" class="rounded-xl -mb-13">
+
+   <div class="lg:grid lg:grid-cols-3 lg:gap-2 lg:max-w-7xl lg:mx-auto lg:justify-center lg:mt-10">
+      <div class="card"> 
+         <div id="plantr"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/plantr-01.png" alt="" />
+               <div class="card-title bg-green-800 bg-opacity-80">
+                  <h1 class="text-3xl font-semibold w-full">Plantr</h1>
+                  <p class="card-desc">
+                     A website that allows users to upload various plants and provide instructions for plant care.
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card"> 
+         <div id="moves"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/moves.jpg" alt="" />
+               <div class="card-title bg-pink-800 bg-opacity-80">
+                  <h1 class="text-3xl font-semibold w-full">Moves</h1>
+                  <p class="card-desc">
+                     A dance event/competition based in the heart of Hollywood
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card"> 
+         <div id="misc"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/misc.jpg" alt="" />
+               <div class="card-title bg-yellow-700 bg-opacity-80">
+                  <h1 class="text-3xl font-semibold w-full">Misc.</h1>
+                  <p class="card-desc">
+                     Die-cut Stickers
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card"> 
+         <div id="freelance"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/freelance.jpg" alt="" />
+               <div class="card-title bg-blue-800 bg-opacity-70">
+                  <h1 class="text-3xl font-semibold w-full">Freelance</h1>
+                  <p class="card-desc">
+                     A collectiong of designs from freelance jobs. Including Joey McIntyre single artwork<
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card"> 
+         <div id="merch"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/merch.jpg" alt="" />
+               <div class="card-title bg-fuchsia-800 bg-opacity-70">
+                  <h1 class="text-3xl font-semibold w-full">Merch.</h1>
+                  <p class="card-desc">
+                  Break The Floor Merchandise
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card">  
+         <div id="logos"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/logos.jpg" alt="" />
+               <div class="card-title bg-cyan-700 bg-opacity-80">
+                  <h1 class="text-3xl font-semibold w-full">Logos</h1>
+                  <p class="card-desc">
+                     50 Day Logo Challenge
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card"> 
+         <div id="blender"></div>
+         <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
+            <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
+               <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/blender.png" alt="" />
+               <div class="card-title bg-yellow-900 bg-opacity-80">
+                  <h1 class="text-3xl font-semibold w-full">Blender</h1>
+                  <p class="card-desc">
+                     3D Modeling
+                  </p> 
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
-   <div class="text-lg px-6 py-6 dark:text-white mx-auto max-w-2xl animate-fade-in-down">
-      <h1 class="text-5xl text-white font-semibold mb-2">Hi I'm Sean!</h1><p class="text-3xl leading-snug font-bold"><span class="bg-trueGray-900 bg-opacity-70 text-white animate-cc2 px-2 rounded">Graphic Designer </span><br><span class="px-2 animation-delay bg-trueGray-900 bg-opacity-70 text-white animate-cc2 rounded">Full Stack Developer</span></p>
-      <p class="mt-6 leading-8">
-         Based in Southern California, I have been working professionally as a Graphic Designer from San Diego to Los Angeles since 2015.
-      </p> 
-   </div>
-   <div class="py-4 flex items-center justify-center">
-      <div class="text-2xl grid grid-flow-col auto-cols-max gap-12">
-         <div class="hover:text-pink-500"><a href="https://www.instagram.com/seanprodi" target="_blank"><i class="fab fa-instagram"></i></a></div>
-         <div class="hover:text-green-500"><a href="https://github.com/sprodi/" target="_blank"><i class="fab fa-github"></i></a></div>
-         <div class="hover:text-blue-500"><a href="http://www.linkedin.com/in/seanprodi" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-         <div class="hover:text-yellow-500"><a href="mailto:seanprodi@gmail.com" target="_blank"><i class="fas fa-at"></i></a></div>
-      </div>
-   </div>
-   <div class="md:hidden flex items-center justify-center h-36 text-black dark:text-white">
-      <a href="#projects">
-         <div class="animate-bounce text-center">
-            Scroll
-            <p class="text-4xl"><i class="fas fa-caret-down"></i></p>
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-         </div>
-      </a>
-   </div>
-
-   <div id="projects"></div>
-   <div class="">
-      <div class="text-sm px-6 py-6 dark:text-white mx-auto max-w-2xl">
-         <h1 class="title text-5xl text-blue-400 font-semibold mb-2">Projects</h1>
-         <div class="mt-5 grid grid-cols-3 gap-3">
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#plantr" class="block py-1 ">Plantr</a></button>
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#moves" class="block py-1 ">Moves</a></button>
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#misc" class="block py-1 h">Misc.</a></button>
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#freelance" class="block py-1 ">Freelance</a></button>
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#merch" class="block py-1 ">Merch.</a></button>
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#logos" class="block py-1 ">Logos</a></button>
-            <button class="card-button dark:bg-gray-800 dark:text-white dark:hover:bg-gray-900"><a href="#blender" class="block py-1 ">Blender</a></button>
-          </div>
-      </div>
-
-
-      <div id="plantr"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/plantr-01.png" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-green-800 bg-opacity-80 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Plantr</h1>
-               <p class="mt-2 leading-5">
-                  A website that allows users to upload various plants and provide instructions for plant care.
-               </p> 
-            </div>
-         </div>
-      </div>
-      
-      <div id="moves"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/moves.jpg" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-pink-800 bg-opacity-80 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Moves</h1>
-               <p class="mt-2 leading-5">
-                  A dance event/competition based in the heart of Hollywood
-               </p> 
-            </div>
-         </div>
-      </div>
-
-      <div id="misc"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/misc.jpg" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-yellow-700 bg-opacity-80 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Misc.</h1>
-               <p class="mt-2 leading-5">
-                  <ul>
-                     <li>Die-cut Stickers</li>
-                  </ul>
-               </p> 
-            </div>
-         </div>
-      </div>
-
-      <div id="freelance"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/freelance.jpg" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-blue-800 bg-opacity-70 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Freelance</h1>
-               <p class="mt-2 leading-5">
-                  A collectiong of designs from freelance jobs. Including Joey McIntyre single artwork<
-               </p> 
-            </div>
-         </div>
-      </div>
-      
-      <div id="merch"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/merch.jpg" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-fuchsia-800 bg-opacity-70 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Merch.</h1>
-               <p class="mt-2 leading-5">
-                 Break The Floor Merchandise
-               </p> 
-            </div>
-         </div>
-      </div>
-      
-      <div id="logos"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/logos.jpg" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-cyan-700 bg-opacity-80 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Logos</h1>
-               <p class="mt-2 leading-5"></p>
-                  50 Day Logo Challenge
-               </p> 
-            </div>
-         </div>
-      </div>
-
-      <div id="blender"></div>
-      <div class="mt-6 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-         <div class="w-full h-52 md:h-96 rounded-lg shadow-2xl overflow-hidden relative">
-            <img draggable="false" class="absolute inset-0 h-full w-full object-cover" src="static/blender.png" alt="" />
-            <div class="text-sm px-6 py-6 text-white w-1/2 h-full max-w-2xl relative bg-yellow-900 bg-opacity-80 flex flex-wrap content-center">
-               <h1 class="text-3xl font-semibold w-full">Blender</h1>
-               <p class="mt-2 leading-5"></p>
-                  3D Modeling
-               </p> 
-            </div>
-         </div>
-      </div>
-
 
    <div id="skills" class="pt-12"></div>
    <div class="">
-      <div class="bg-blue-400 rounded-t-3xl text-sm px-6 pt-6 pb-12 dark:text-white mx-auto max-w-2xl js-scroll-up">
-         <h1 class="title text-5xl text-white font-semibold mb-2">Skills</h1>
-         <div class="mt-5 grid grid-cols-3 gap-3">
+      <div class="bg-gray-600 dark:bg-gray-800 rounded-t-3xl text-sm px-6 pt-6 pb-12 dark:text-white mx-auto max-w-2xl js-scroll-up md:max-w-full md:px-40 md:py-10">
+         <h1 class="title text-5xl text-white font-semibold mb-2 lg:flex lg:justify-center lg:mb-10">Skills</h1>
+         <div class="mt-5 grid grid-cols-3 gap-3 md:auto-cols-max md:justify-center lg:flex lg:justify-around">
             <img draggable="false" src="static/skills/html.png" class="skills">
             <img draggable="false" src="static/skills/css.png" class="skills">
             <img draggable="false" src="static/skills/python2.png" class="skills">
