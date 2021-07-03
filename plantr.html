@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Sean Prodi | Portfolio</title>
+   <title>Sean Prodi | Plantr</title>
    <link rel="stylesheet" href="static/tailwind/tailwind.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
@@ -49,73 +49,51 @@
         <span class="text-4xl uppercase font-light tracking-widest">Sean Prodi</span>
       </a>
       
-      <button id="switchTheme" class="md:hidden h-10 w-10 flex justify-center items-center focus:outline-none"><i class="text-2xl text-gray-500 fas fa-toggle-off"></i>
-      </button>
+      <div class="flex justify-center items-center mt-1" x-data="{toggle: '0'}">
+         <span id="l-mode" class="hidden md:block px-3 text-gray-500">
+            <svg class="hidden md:block h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+         </span>
+         <div class="relative rounded-full w-7 h-4 md:w-9 md:h-5 transition duration-200 ease-linear"
+              :class="[toggle === '1' ? 'bg-yellow-400' : 'bg-gray-400']">
+           <label for="toggle"
+                  class="absolute left-0 bg-white border-2 mb-2 w-4 h-4 md:w-5 md:h-5 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+                  :class="[toggle === '1' ? 'translate-x-full border-yellow-400' : 'translate-x-0 border-gray-400']"></label>
+           <input type="checkbox" id="toggle" name="toggle"
+                  class="appearance-none w-full h-full active:outline-none focus:outline-none"
+                  @click="toggle === '0' ? toggle = '1' : toggle = '0'"/>
+         </div> 
+         <span class="hidden md:block px-3">
+            <svg class="hidden md:block h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+         </span>
+      </div>
+
 
       <button @click="mobileMenuOpen = !mobileMenuOpen"  class="inline-block md:hidden w-8 h-8 mt-1 bg-white dark:bg-trueGray-700 dark:text-white p-1">
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': mobileMenuOpen,' -translate-y-1.5': !mobileMenuOpen }"></span>
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': mobileMenuOpen } "></span>
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': mobileMenuOpen, ' translate-y-1.5': !mobileMenuOpen}"></span>
       </button>
-      <nav class="bg-trueGray-200 dark:bg-trueGray-800 md:dark:bg-trueGray-700 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
-         <a href="#" class="block py-1 text-blue-600 ">Home</a>
-         <a href="#projects" class="block py-1 dark:text-white ">Projects</a>
-         <a href="#skills" class="block py-1 dark:text-white ">Skills</a>
-         <a href="mailto:seanprodi@gmail.com" class="block py-1" target="_blank">Contact</a>
-         <button id="switchTheme2" class="hidden h-10 w-10 pb-1 md:flex justify-center items-center focus:outline-none"><i class="text-2xl text-trueGray-500 fas fa-toggle-off"></i>
-         </button>
+      <nav class="bg-gray-800 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
+         <a href="#" class="block py-1 text-blue-600">Home</a>
+         <a href="#projects" class="block py-1 text-white md:text-black lg:dark:text-white">Projects</a>
+         <a href="#skills" class="block py-1 text-white md:text-black lg:dark:text-white">Skills</a>
+         <a href="mailto:seanprodi@gmail.com" class="block py-1 text-white md:text-black lg:dark:text-white" target="_blank">Contact</a>
       </nav>
    </header>
 
-Test
+   <div class="md:max-w-3xl lg:max-w-5xl md:mx-auto md:bg-gray-800 md:dark:bg-gray-900 md:text-white md:rounded-2xl md:px-5 md:p-5 md:mt-10 md:shadow-lg">
+      <div class="bg-cover bg-no-repeat bg-center rounded-lg mx-auto w-5/6 md:w-full h-52 lg:w-full lg:h-96 " style="background-image: url(/static/plantr-01.png)">&nbsp;</div>
 
-
-   <a id="button"></a>
-
+   </div>
 
 
 
    <script src="/static/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
    <script src="/static/js/app.js"></script>
-
-   <script>
-      document.getElementById('switchTheme').addEventListener('click', function() {
-          let htmlClasses = document.querySelector('html').classList;
-          if(localStorage.theme == 'dark') {
-              htmlClasses.remove('dark');
-              localStorage.removeItem('theme')
-          } else {
-              htmlClasses.add('dark');
-              localStorage.theme = 'dark';
-          }
-      });
-  </script>
-   <script>
-      document.getElementById('switchTheme2').addEventListener('click', function() {
-          let htmlClasses = document.querySelector('html').classList;
-          if(localStorage.theme == 'dark') {
-              htmlClasses.remove('dark');
-              localStorage.removeItem('theme')
-          } else {
-              htmlClasses.add('dark');
-              localStorage.theme = 'dark';
-          }
-      });
-  </script>
-
-   <script>
-      if (localStorage.theme === 'dark' || (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-         document.querySelector('html').classList.add('dark')
-      } else if (localStorage.theme === 'dark') {
-         document.querySelector('html').classList.add('dark')
-      }
-   </script>
-
-<script type="text/javascript">
-   $("button").click(function(){
-      $(this).find("i").toggleClass("fas fa-toggle-off").toggleClass("fas text-yellow-500 fa-toggle-on");
-});
-</script>
 
 </body>
 </html>
