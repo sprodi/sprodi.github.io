@@ -2196,6 +2196,11 @@ img {
   background-color: rgba(64, 64, 64, var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+}
+
 .dark .dark\:hover\:bg-cyan-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(14, 116, 144, var(--tw-bg-opacity));
@@ -2654,6 +2659,11 @@ img {
 .hover\:text-yellow-500:hover {
   --tw-text-opacity: 1;
   color: rgba(245, 158, 11, var(--tw-text-opacity));
+}
+
+.dark .dark\:text-black {
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .dark .dark\:text-white {
