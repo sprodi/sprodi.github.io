@@ -78,10 +78,10 @@
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': mobileMenuOpen, ' translate-y-1.5': !mobileMenuOpen}"></span>
       </button>
       <nav class="bg-gray-800 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
-         <a href="#" class="block py-1 text-blue-600">Home</a>
-         <a href="#projects" class="block py-1 text-white md:text-white lg:text-black lg:dark:text-white">Projects</a>
-         <a href="#skills" class="block py-1 text-white md:text-white lg:text-black lg:dark:text-white">Skills</a>
-         <a href="mailto:seanprodi@gmail.com" class="block py-1 text-white md:text-white lg:text-black lg:dark:text-white" target="_blank">Contact</a>
+         <a href="#" class="block py-1 text-white hover:text-blue-500 md:text-white lg:text-black lg:dark:text-white">Home</a>
+         <a href="/#projects" class="block py-1 text-white hover:text-blue-500 md:text-white lg:text-black lg:dark:text-white">Projects</a>
+         <a href="/#skills" class="block py-1 text-white hover:text-blue-500 md:text-white lg:text-black lg:dark:text-white">Skills</a>
+         <a href="mailto:seanprodi@gmail.com" class="block py-1 text-white hover:text-blue-500 md:text-white lg:text-black lg:dark:text-white" target="_blank">Contact</a>
       </nav>
    </header>
 
@@ -105,8 +105,8 @@
    <!-- Cards -->
       <div class="lg:grid lg:grid-cols-3 lg:gap-2 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
          <div class="-mt-3 md:mt-3 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-            <div class="bg-gray-50 dark:bg-gray-800 w-80 md:w-4/5 max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden relative justify-center items-center mx-auto">
-               <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center">Description</h1>
+            <div class="bg-gray-100 dark:bg-gray-800 w-80 md:w-4/5 max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden relative justify-center items-center mx-auto">
+               <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center text-green-700">Description</h1>
                <p>A website that allows users to upload various plants and provide instructions for plant care.</p>
                <p class="text-xs text-gray-600 dark:text-gray-300 uppercase italic mt-3">HTML / CSS / DJANGO / JS / BOOSTRAP </p>
                <p class="text-xs text-gray-400 dark:text-gray-500 uppercase">Coding Dojo (Coding Bootcamp)</p>
@@ -114,8 +114,8 @@
          </div>
 
          <div class="mt-2 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-            <div class="bg-gray-50 dark:bg-gray-800 w-80 md:w-4/5 max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden relative justify-center items-center mx-auto">
-               <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center">Features</h1>
+            <div class="bg-gray-100 dark:bg-gray-800 w-80 md:w-4/5 max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden relative justify-center items-center mx-auto">
+               <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center text-green-700">Features</h1>
                <ul class="list-disc list-outside pl-5">
                   <li>User registration/login with validations</li>
                   <li>Submit plant/instructions with validations</li>
@@ -128,8 +128,8 @@
          </div>
       
          <div class="mt-2 px-3 py-1.5 mx-auto max-w-2xl js-show-on-scroll">
-            <div class="bg-gray-50 dark:bg-gray-800 w-80 md:w-4/5 max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden relative justify-center items-center mx-auto">
-               <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center">Extras</h1>
+            <div class="bg-gray-100 dark:bg-gray-800 w-80 md:w-4/5 max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden relative justify-center items-center mx-auto">
+               <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center text-green-700">Extras</h1>
                <p>3 easter eggs</p>
                <p>While on /plantr, type the following codes followed by pressing Enter/Return to trigger the easter eggs.</p>
                <ul class="list-disc list-outside pl-5">
@@ -163,7 +163,7 @@
          </template>
       </div>
        
-      <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center">Screenshots</h1>
+      <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center mt-5 text-green-700">Screenshots</h1>
       <div x-data="{}" class="px-2"> 
          <div class="-mx-2 lg:grid lg:grid-cols-3 lg:gap-y-4 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
             <div class="w-full h-42 px-2 pb-5 md:pb-4">
