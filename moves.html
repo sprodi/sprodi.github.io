@@ -96,185 +96,190 @@
    </div>
 
    <!-- Cards -->
-      <div class="-mt-28 md:-mt-14 px-3 py-1.5 mx-auto w-5/6 js-show-on-scroll">
-         <div class="bg-gray-100 dark:bg-gray-800 w-full max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden justify-center items-center">
-            <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center text-pink-700">Description</h1>
-            <p>A dance event/competition in the heart of hollywood where 28 of the top emerging choreographers in the country compete for the prize of $15,000 and the opportunity to put on their own full-length show.</p>
-            <p class="text-xs text-gray-600 dark:text-gray-300 uppercase italic mt-3">DIGITAL / PRINT</p>
-            <p class="text-xs text-gray-400 dark:text-gray-500 uppercase">Graphic Design</p>
-         </div>
+   <div class="-mt-28 md:-mt-14 px-3 py-1.5 mx-auto w-5/6 js-show-on-scroll">
+      <div class="bg-gray-100 dark:bg-gray-800 w-full max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden justify-center items-center">
+         <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center text-pink-700">Description</h1>
+         <p>A dance event/competition in the heart of hollywood where 28 of the top emerging choreographers in the country compete for the prize of $15,000 and the opportunity to put on their own full-length show.</p>
+         <p class="text-xs text-gray-600 dark:text-gray-300 uppercase italic mt-3">DIGITAL / PRINT</p>
+         <p class="text-xs text-gray-400 dark:text-gray-500 uppercase">Graphic Design</p>
       </div>
+   </div>
 
-      <!-- Gallery  -->
-      <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
-         <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
-           <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
-             <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
-               <div class="z-50">
-                 <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
-                   <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                     <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
-                     </path>
-                   </svg>
-                 </button>
-               </div>
-               <div class="p-2">
-                 <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
-                 <p x-text="imgModalDesc" class="text-center text-white"></p>
-               </div>
-             </div>
-           </div>
-         </template>
-      </div>
-       
-      <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center mt-5 text-pink-700">Digital / Print Designs</h1>
-      <p class="text-center uppercase text-sm tracking-widest -mt-3 mb-5 text-red-500">Click image to view</p>
-      <div x-data="{}" class="px-2"> 
-         <div class="-mx-2 lg:grid lg:grid-cols-3 lg:gap-y-4 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-01.jpg', imgModalDesc: 'Poster 01' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-01.jpg)">&nbsp;</div>
-                  </a>
-               </div>
+   <!-- Gallery  -->
+   <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+      <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+         <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+            <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+            <div class="z-50">
+               <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                  <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                  </path>
+                  </svg>
+               </button>
             </div>
-      
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-02.jpg', imgModalDesc: 'Poster 02' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-02.jpg)">&nbsp;</div>
-                  </a>
-               </div>
+            <div class="p-2">
+               <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
+               <p x-text="imgModalDesc" class="text-center text-white"></p>
             </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-03.jpg', imgModalDesc: 'Poster 03' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-03.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-04.jpg', imgModalDesc: 'Step and Repeat' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-04.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-            
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-05.jpg', imgModalDesc: 'Social 01' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-05.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-06.jpg', imgModalDesc: 'Social 02' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-06.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-07.jpg', imgModalDesc: 'Social 03' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-07.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-08.jpg', imgModalDesc: 'Social 04' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-08.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-09.jpg', imgModalDesc: 'Social 05' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-09.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-10.jpg', imgModalDesc: 'Poster 04' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-10.jpg)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
-
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-11.jpg', imgModalDesc: 'Postcard 01' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-11.jpg)">&nbsp;</div>
-                  </a>
-               </div>
             </div>
          </div>
-      </div>
-
-      <!-- Gallery  -->
-      <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center mt-4 text-pink-700">Photos</h1>
-      <p class="text-center uppercase text-sm tracking-widest -mt-3 mb-5 text-red-500">Click image to view</p>
-      <div x-data="{}" class="px-2"> 
-         <div class="-mx-2 lg:grid lg:grid-cols-2 lg:gap-y-4 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-01.JPG', imgModalDesc: 'Main Entrance Posters' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-01.JPG)">&nbsp;</div>
-                  </a>
-               </div>
-            </div>
+      </template>
+   </div>
       
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-02.JPG', imgModalDesc: 'Playbill' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-02.JPG)">&nbsp;</div>
-                  </a>
-               </div>
+   <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center mt-5 text-pink-700">Digital / Print Designs</h1>
+   <p class="text-center uppercase text-sm tracking-widest -mt-3 mb-5 text-red-500">Click image to view</p>
+   <div x-data="{}" class="px-2"> 
+      <div class="-mx-2 lg:grid lg:grid-cols-3 lg:gap-y-4 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-01.jpg', imgModalDesc: 'Poster 01' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-01.jpg)">&nbsp;</div>
+               </a>
             </div>
+         </div>
+   
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-02.jpg', imgModalDesc: 'Poster 02' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-02.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
 
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-p-03.JPG', imgModalDesc: 'Poster 04' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-p-03.JPG)">&nbsp;</div>
-                  </a>
-               </div>
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-03.jpg', imgModalDesc: 'Poster 03' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-03.jpg)">&nbsp;</div>
+               </a>
             </div>
+         </div>
 
-            <div class="w-full h-42 px-2 pb-5 md:pb-4">
-               <div class="">
-                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-04.jpg', imgModalDesc: 'Step and Repeat' })"
-                     class="cursor-pointer">
-                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-04.jpg)">&nbsp;</div>
-                  </a>
-               </div>
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-04.jpg', imgModalDesc: 'Step and Repeat' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-04.jpg)">&nbsp;</div>
+               </a>
             </div>
+         </div>
+         
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-05.jpg', imgModalDesc: 'Social 01' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-05.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-06.jpg', imgModalDesc: 'Social 02' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-06.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-07.jpg', imgModalDesc: 'Social 03' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-07.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-08.jpg', imgModalDesc: 'Social 04' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-08.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-09.jpg', imgModalDesc: 'Social 05' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-09.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-10.jpg', imgModalDesc: 'Poster 04' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-10.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/matm-11.jpg', imgModalDesc: 'Postcard 01' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/matm-11.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
       </div>
+   </div>
 
-      
+   <!-- Gallery  -->
+   <h1 class="text-4xl dark:text-white font-semibold mb-2 p-2 text-center mt-4 text-pink-700">Photos</h1>
+   <p class="text-center uppercase text-sm tracking-widest -mt-3 mb-5 text-red-500">Click image to view</p>
+   <div x-data="{}" class="px-2"> 
+      <div class="-mx-2 lg:grid lg:grid-cols-2 lg:gap-y-4 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-01.JPG', imgModalDesc: 'Main Entrance Posters' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-01.JPG)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+   
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-02.JPG', imgModalDesc: 'Playbill' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-02.JPG)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-03.JPG', imgModalDesc: 'Poster 04' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-03.JPG)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+
+         <div class="w-full h-42 px-2 pb-5 md:pb-4">
+            <div class="">
+               <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/moves/photos/matm-p-04.jpg', imgModalDesc: 'Step and Repeat' })"
+                  class="cursor-pointer">
+                  <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-52 " style="background-image: url(/static/moves/photos/matm-p-04.jpg)">&nbsp;</div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+      <!-- Footer  -->
+      <div class="flex justify-between mt-20 mb-10 px-3 py-1.5 mx-auto w-5/6 md:max-w-3xl lg:max-w-5xl">
+         <a href="plantr.html"><h1 class="text-lg lg:text-4xl dark:text-white font-semibold p-2 text-center text-black-700 hover:text-blue-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="inline-flex transform rotate-180 mb-1"><path fill="currentcolor" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg> Plantr</h1></a>
+         <a href="misc.html"><h1 class="text-lg lg:text-4xl dark:text-white font-semibold p-2 text-center text-black-700 hover:text-blue-500">Misc. <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="inline-flex mb-1"><path fill="currentcolor" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></h1></a>
+      </div>
   
       
 
