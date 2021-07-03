@@ -2671,6 +2671,16 @@ img {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.dark .dark\:text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgba(212, 212, 216, var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(113, 113, 122, var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration: underline;
 }
