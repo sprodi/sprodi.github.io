@@ -3593,11 +3593,6 @@ $tertiary-color: #ffffff;
     line-height: 1.375;
   }
 
-  .md\:text-black {
-    --tw-text-opacity: 1;
-    color: rgba(0, 0, 0, var(--tw-text-opacity));
-  }
-
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
