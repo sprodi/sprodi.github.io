@@ -1104,6 +1104,10 @@ img {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -3318,6 +3322,10 @@ $tertiary-color: #ffffff;
 
   .md\:rounded-none {
     border-radius: 0px;
+  }
+
+  .md\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .md\:rounded-2xl {
