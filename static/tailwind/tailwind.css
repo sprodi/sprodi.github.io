@@ -2731,6 +2731,11 @@ img {
   color: rgba(56, 189, 248, var(--tw-text-opacity));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgba(14, 165, 233, var(--tw-text-opacity));
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgba(2, 132, 199, var(--tw-text-opacity));
@@ -3180,6 +3185,10 @@ $tertiary-color: #ffffff;
 
   .md\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .md\:-mt-3 {
+    margin-top: -0.75rem;
   }
 
   .md\:-mt-14 {
