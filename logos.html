@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sean Prodi | Merch</title>
+   <link rel="stylesheet" href="static/tailwind/tailwind.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <script src="https://kit.fontawesome.com/6912b0bfd0.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LSPC31B6S"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0LSPC31B6S');
+   </script>
+
+   <!-- Google Tag Manager -->
+   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WVHK7S3');
+   </script>
+   <!-- End Google Tag Manager -->
+
+
+
+</head>
+
+<body class="dark:bg-gray-700 text-black dark:text-white lg:max-w-7xl lg:mx-auto lg:mb-40">
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVHK7S3"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+   
+   <header x-data="{ mobileMenuOpen : false }" class="bg-white flex flex-wrap flex-row justify-between md:space-x-4 dark:bg-gray-700 py-6 px-6 relative">
+      <a href="/" class="block ">
+        <span class="text-4xl uppercase font-light tracking-widest">Sean Prodi</span>
+      </a>
+      
+      <div class="flex justify-center items-center mt-1" x-data="{toggle: '0'}">
+         <span id="l-mode" class="hidden md:block px-3 text-gray-500">
+            <svg class="hidden md:block h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+         </span>
+         <div class="relative rounded-full w-7 h-4 md:w-9 md:h-5 transition duration-200 ease-linear"
+              :class="[toggle === '1' ? 'bg-yellow-400' : 'bg-gray-400']">
+           <label for="toggle"
+                  class="absolute left-0 bg-white border-2 mb-2 w-4 h-4 md:w-5 md:h-5 rounded-full transition transform duration-100 ease-linear cursor-pointer"
+                  :class="[toggle === '1' ? 'translate-x-full border-yellow-400' : 'translate-x-0 border-gray-400']"></label>
+           <input type="checkbox" id="toggle" name="toggle"
+                  class="appearance-none w-full h-full active:outline-none focus:outline-none"
+                  @click="toggle === '0' ? toggle = '1' : toggle = '0'"/>
+         </div> 
+         <span class="hidden md:block px-3">
+            <svg class="hidden md:block h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+         </span>
+      </div>
+
+
+      <button @click="mobileMenuOpen = !mobileMenuOpen"  class="inline-block md:hidden w-8 h-8 mt-1 bg-white dark:bg-trueGray-700 dark:text-white p-1">
+         <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': mobileMenuOpen,' -translate-y-1.5': !mobileMenuOpen }"></span>
+         <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': mobileMenuOpen } "></span>
+         <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': mobileMenuOpen, ' translate-y-1.5': !mobileMenuOpen}"></span>
+      </button>
+      <nav class="bg-gray-800 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
+         <a href="#" class="block py-1 text-white hover:text-blue-500 md:text-black lg:text-black lg:dark:text-white">Home</a>
+         <a href="/#projects" class="block py-1 text-white hover:text-blue-500 md:text-black lg:text-black lg:dark:text-white">Projects</a>
+         <a href="/#skills" class="block py-1 text-white hover:text-blue-500 md:text-black lg:text-black lg:dark:text-white">Skills</a>
+         <a href="mailto:seanprodi@gmail.com" class="block py-1 text-white hover:text-blue-500 md:text-black lg:text-black lg:dark:text-white" target="_blank">Contact</a>
+      </nav>
+   </header>
+
+   <div class="md:max-w-3xl lg:max-w-5xl md:mx-auto md:bg-gray-800 md:dark:bg-gray-900 md:text-white md:rounded-2xl md:p-5 md:mt-10 md:shadow-lg">
+      <div class="bg-cover bg-local bg-no-repeat bg-center md:rounded-lg mx-auto w-screen md:w-full h-52 lg:h-96" style="background-image: url(/static/logos.jpg)">&nbsp;
+      </div>
+   </div>
+
+   <!-- Title & Button -->
+   <div class="grid grid-rows-2 w-5/6 md:max-w-3xl lg:max-w-5xl mx-auto mt-5">
+      <h1 class="text-5xl dark:text-white font-semibold mb-2 p-2 text-center">Logos</h1>
+   </div>
+
+   <!-- Cards -->
+      <div class="-mt-16 md:-mt-14 px-3 py-1.5 mx-auto w-5/6 js-show-on-scroll">
+         <div class="bg-gray-100 dark:bg-gray-800 w-full max-h-auto p-5 md:h-auto rounded-lg lg:rounded-3xl lg:w-full shadow-md overflow-hidden justify-center items-center">
+            <h1 class="text-4xl  font-semibold mb-2 p-2 text-center text-cyan-700">Description</h1>
+            <p>Part of the 50 Day Logo Challenge</p>
+            <p class="text-xs text-gray-600 dark:text-gray-300 uppercase italic mt-3">Logos</p>
+            <p class="text-xs text-gray-400 dark:text-gray-500 uppercase">Graphic Design</p>
+         </div>
+      </div>
+
+      <!-- Gallery  -->
+      <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+         <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+           <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+             <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+               <div class="z-50">
+                 <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+                   <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                     <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                     </path>
+                   </svg>
+                 </button>
+               </div>
+               <div class="p-2">
+                 <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
+                 <p x-text="imgModalDesc" class="text-center text-white"></p>
+               </div>
+             </div>
+           </div>
+         </template>
+      </div>
+       
+      <div class="grid grid-rows-2 w-5/6 md:max-w-3xl lg:max-w-5xl mx-auto mt-5">
+         <h1 class="text-4xl font-semibold mb-2 p-2 text-center mt-0 text-white">Die-cut Stickers</h1>
+         
+         <p class="text-center uppercase text-sm tracking-widest -mt-6 -mb-6 text-blue-500">Click image to view</p>
+      </div>
+      <div x-data="{}" class="px-2"> 
+         <div class="-mx-2 md:grid lg:grid-cols-3 lg:gap-y-4 lg:max-w-5xl lg:mx-auto lg:justify-center lg:mt-0">
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/01-rocketship-01.jpg', imgModalDesc: 'Rocketship Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/01-rocketship-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+      
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/02-hot-air-balloon-01.jpg', imgModalDesc: 'Hot Air Balloon Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/02-hot-air-balloon-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/03-panda-01.jpg', imgModalDesc: 'Panda Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/03-panda-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/04-letter-01.jpg', imgModalDesc: 'Letter Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/04-letter-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+            
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/05-driverless-car-01.jpg', imgModalDesc: 'Driverless Car Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/05-driverless-car-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/06-coffee-shop-01.jpg', imgModalDesc: 'Coffee Shop Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/06-coffee-shop-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/07-fashion-brand-wordmark-01.jpg', imgModalDesc: 'Fashion Brand Wordmark Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/07-fashion-brand-wordmark-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/08-ski-mountain-01.jpg', imgModalDesc: 'Ski Mountain Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/08-ski-mountain-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="w-full h-42 px-2 pb-5 md:pb-4">
+               <div class="">
+                  <a @click="$dispatch('img-modal', {  imgModalSrc: '/static/logos/09-streaming-music-start-up-01.jpg', imgModalDesc: 'Streaming Music Start Up Logo' })"
+                     class="cursor-pointer">
+                     <div class="bg-cover bg-gray-50 dark:bg-gray-800 shadow-md bg-no-repeat bg-center rounded-lg mx-auto w-80 md:w-3/5 md:h-72 h-52 lg:w-full lg:h-80 " style="background-image: url(/static/logos/09-streaming-music-start-up-01.jpg)">&nbsp;</div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="flex justify-between mt-20 mb-10 px-3 py-1.5 mx-auto w-5/6 md:max-w-3xl lg:max-w-5xl">
+         <a href="merch.html"><h1 class="text-lg lg:text-4xl dark:text-white font-semibold p-2 text-center text-black-700 hover:text-blue-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="inline-flex transform rotate-180 mb-1"><path fill="currentcolor" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg> Merch.</h1></a>
+         <a href="blender.html">
+            <h1 class="text-lg lg:text-4xl font-semibold p-2 text-center text-black-700 hover:text-blue-500">Blender <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="inline-flex mb-1"><path fill="currentcolor" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></h1>
+         <!-- </a> -->
+      </div>
+      
+  
+      
+
+   <!-- Scroll to top button -->
+   <a id="button"></a>
+
+   <script src="/static/js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+   <script src="/static/js/app.js"></script>
+
+</body>
+</html>
