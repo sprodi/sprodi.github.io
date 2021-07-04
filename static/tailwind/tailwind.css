@@ -2788,6 +2788,11 @@ img {
   color: rgba(180, 83, 9, var(--tw-text-opacity));
 }
 
+.text-yellow-900 {
+  --tw-text-opacity: 1;
+  color: rgba(120, 53, 15, var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
