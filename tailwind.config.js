@@ -9,6 +9,13 @@ module.exports = {
       './**/*.js',
    ],
    theme: {
+      backgroundSize: {
+         'auto': 'auto',
+         'cover': 'cover',
+         'contain': 'contain',
+         '180%': '180%',
+         '16': '4rem',
+       },
       colors: {
          transparent: 'transparent',
          current: 'currentColor',
@@ -19,6 +26,7 @@ module.exports = {
          pink: colors.pink,
          green: colors.green,
          gray: colors.gray,
+         coolGray: colors.coolGray,
          trueGray: colors.trueGray,
          red: colors.red,
          blue: colors.sky,
@@ -40,6 +48,20 @@ module.exports = {
          'title': '0 3px 3px rgba(0, 0, 0, 0.7)',
       },
       extend: {
+         backgroundImage: theme => ({
+            'profile-photo': "url('/static/sean-blue.jpg')",
+            'app-header': "url('/static/app/app-header.jpg')",
+            'app-header-2': "url('/static/app/app-header-2.jpg')",
+            'favicon': "url('/static/favicon.jpg')",
+            'ig': "url('/static/app/icons/ig.svg')",
+            'linkedin': "url('/static/app/icons/linkedin.svg')",
+            'github': "url('/static/app/icons/github.svg')",
+            'github-2': "url('/static/app/icons/github-2.svg')",
+            'email': "url('/static/app/icons/email.svg')",
+            'spotify': "url('/static/app/icons/spotify.svg')",
+
+
+         }),
          keyframes: {
             'menu-up': {
                '0%': {
@@ -71,17 +93,17 @@ module.exports = {
                   transform: 'translateY(0)'
                },
             },
-             'cc1': {
+            'cc1': {
                '0%, 50%, 100%': { color: 'black' },
                '25%': { color: 'orange' },
                '75%': { color: 'blue' },
-             },
-             'cc2': {
+            },
+            'cc2': {
                '0%, 50%, 100%': { color: 'white' },
                '25%': { color: 'gold' },
                '75%': { color: '#3B82F6' },
-             },
-             'fadeInDown': {
+            },
+            'fadeInDown': {
                '0%': { 
                   opacity: '0', 
                   transform: 'translateY(-30px)',
@@ -90,8 +112,8 @@ module.exports = {
                   opacity: '1',
                   transform: 'translateY(0)',
                },
-             },
-             'fadeInRight': {
+            },
+            'fadeInRight': {
                '0%': { 
                   opacity: '0', 
                   transform: 'translateX(-90px)',
