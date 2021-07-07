@@ -1167,6 +1167,10 @@ img {
   max-width: 48rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -2863,6 +2867,11 @@ img {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgba(39, 39, 42, var(--tw-text-opacity));
+}
+
+.text-coolGray-400 {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 
 .text-red-500 {
