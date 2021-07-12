@@ -1233,8 +1233,8 @@ img {
   --tw-translate-x: 0px;
 }
 
-.translate-x-full {
-  --tw-translate-x: 100%;
+.translate-x-3\/4 {
+  --tw-translate-x: 75%;
 }
 
 .translate-y-1 {
@@ -1469,30 +1469,6 @@ img {
   }
 }
 
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -1509,6 +1485,30 @@ img {
   0% {
     opacity: 0;
     transform: translateX(-90px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
   }
 
   100% {
@@ -1535,11 +1535,6 @@ img {
 .animate-cc2 {
   -webkit-animation: cc2 8s ease-in-out infinite;
           animation: cc2 8s ease-in-out infinite;
-}
-
-.animate-fadeInUp {
-  -webkit-animation: fadeInUp .75s ease-in forwards;
-          animation: fadeInUp .75s ease-in forwards;
 }
 
 .animate-fadeInRight {
@@ -3440,6 +3435,11 @@ $tertiary-color: #ffffff;
 
   .md\:flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .md\:animate-fadeIn {
+    -webkit-animation: fadeIn .75s ease-in forwards;
+            animation: fadeIn .75s ease-in forwards;
   }
 
   .md\:auto-cols-max {

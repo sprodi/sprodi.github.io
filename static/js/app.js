@@ -50,8 +50,10 @@ const callback = function (entries) {
 
     if (entry.isIntersecting) {
       entry.target.classList.add("animate-fadeInRight");
+      entry.target.classList.add("md:animate-fadeIn");
     } else {
       entry.target.classList.remove("animate-fadeInRight");
+      entry.target.classList.remove("md:animate-fadeIn");
     }
   });
 };
@@ -63,29 +65,6 @@ targets.forEach(function (target) {
   target.classList.add("opacity-0");
   observer.observe(target);
 });
-
-
-
-const callback2 = function (entries) {
-  entries.forEach((entry) => {
-    console.log(entry);
-
-    if (entry.isIntersecting) {
-      entry.target.classList.add("animate-fadeInUp");
-    } else {
-      entry.target.classList.remove("animate-fadeInUp");
-    }
-  });
-};
-
-const observer2 = new IntersectionObserver(callback2);
-
-const targets2 = document.querySelectorAll(".js-scroll-up");
-targets2.forEach(function (target) {
-  target.classList.add("opacity-0");
-  observer2.observe(target);
-});
-
 
 
 

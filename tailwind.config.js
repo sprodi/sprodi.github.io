@@ -133,6 +133,16 @@ module.exports = {
                   transform: 'translateY(0)',
                },
             },
+            'fadeIn': {
+               '0%': { 
+                  opacity: '0', 
+                  transform: 'translateX(0)',
+               },
+               '100%': { 
+                  opacity: '1',
+                  transform: 'translateX(0)',
+               },
+            },
          },
          animation: {
             'menu-down': 'menu-down 0.75s ease-in-out',
@@ -140,8 +150,8 @@ module.exports = {
             'fade-in-down': 'fade-in-down 1.5s ease-in-out',
             'cc1': 'cc1 8s ease-in-out infinite',
             'cc2': 'cc2 8s ease-in-out infinite',
-            'fadeInUp': 'fadeInUp .75s ease-in forwards',
             'fadeInRight': 'fadeInRight .75s ease-in forwards',
+            'fadeIn': 'fadeIn .75s ease-in forwards',
          },
    },
    variants: {
