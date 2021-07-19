@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "postcss ./styles.css -o ./static/tailwind/tailwind.css --watch",
-    "build": "cross-env NODE_ENV=production postcss ./styles.css -o ./static/tailwind/tailwind.css"
+    "start": "postcss ./static/css/styles.css -o ./static/tailwind/tailwind.css --watch",
+    "build": "cross-env NODE_ENV=production postcss ./static/css/styles.css -o ./static/tailwind/tailwind.css"
   },
   "author": "",
   "license": "ISC",
