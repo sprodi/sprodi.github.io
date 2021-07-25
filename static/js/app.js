@@ -93,3 +93,55 @@ $(document).ready(function() {
 });
 
 
+// skills text animation
+var text = ["Illustrator", "InDesign", "AfterEffects", "Photoshop"];
+var counter = 0;
+var elem = $("#adobe");
+setInterval(change, 3000);
+function change() {
+    elem.fadeOut(function(){
+        elem.html(text[counter]);
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+        elem.fadeIn();
+    });
+}
+
+var text2 = ["Pages", "Keynote"];
+var counter2 = 0;
+var elem2 = $("#apple");
+setInterval(change2, 3000);
+function change2() {
+    elem2.fadeOut(function(){
+        elem2.html(text2[counter2]);
+        counter2++;
+        if(counter2 >= text2.length) { counter2 = 0; }
+        elem2.fadeIn();
+    });
+}
+
+var text3 = ["CSS", "TailwindCSS", "Bootstrap", "HTML"];
+var counter3 = 0;
+var elem3 = $("#fEnd");
+setInterval(change3, 3000);
+function change3() {
+    elem3.fadeOut(function(){
+        elem3.html(text3[counter3]);
+        counter3++;
+        if(counter3 >= text3.length) { counter3 = 0; }
+        elem3.fadeIn();
+    });
+}
+
+var text4 = ["Python - Django", "JavaScript"];
+var counter4 = 0;
+var elem4 = $("#bEnd");
+setInterval(change4, 3000);
+function change4() {
+    elem4.fadeOut(function(){
+        elem4.html(text4[counter4]);
+        counter4++;
+        if(counter4 >= text4.length) { counter4 = 0; }
+        elem4.fadeIn();
+    });
+}
