@@ -12,7 +12,7 @@
   "homepage": "https://sprodi.github.io/seanrpodi",
   "devDependencies": {
     "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.4"
   },
