@@ -100,5 +100,10 @@ $tertiary-color: #ffffff;
       transition: opacity 0.3s linear;
       pointer-events: none;
       }
+
+   .h-plantr {
+      background-image: url("..\static\plantr-01.png");
+      background: red;
+   }
 }
 
