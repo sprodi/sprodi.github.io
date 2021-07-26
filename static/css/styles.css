@@ -101,9 +101,5 @@ $tertiary-color: #ffffff;
       pointer-events: none;
       }
 
-   .h-plantr {
-      background-image: url("..\static\plantr-01.png");
-      background: red;
-   }
 }
 

@@ -59,6 +59,7 @@ module.exports = {
             'github-2': "url('/static/app/icons/github-2.svg')",
             'email': "url('/static/app/icons/email.svg')",
             'spotify': "url('/static/app/icons/spotify.svg')",
+            'plantr': "url('/static/plantr-01.png')",
 
 
          }),
