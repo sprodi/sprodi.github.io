@@ -26,6 +26,10 @@ $tertiary-color: #ffffff;
       @apply text-black !important;
    }
 
+   .card {
+      @apply px-6 py-2 lg:px-0 lg:py-0;
+   }
+
    .card-button {
       @apply bg-gray-200 font-semibold hover:bg-blue-700 rounded text-black hover:text-white lg:h-12;
    }
@@ -35,8 +39,30 @@ $tertiary-color: #ffffff;
    }
 
    .card-desc {
-      @apply mt-2 leading-5 lg:leading-normal;
+      @apply relative flex items-center justify-center overflow-hidden text-2xs -mt-3 pb-2 px-10 text-center uppercase font-normal tracking-widest leading-5 lg:leading-normal;
    }
+
+   .card-zoom {
+      @apply relative flex items-center justify-center overflow-hidden shadow-2xl w-full h-52 md:h-72 rounded-3xl;
+   }
+
+   .card-zoom-image {
+      @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+   }
+
+   .card-zoom-text {
+      @apply absolute text-3xl md:text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-100 text-center;
+   }  
+
+   .card-zoom:hover .card-zoom-image {
+      @apply scale-150;
+   }
+
+   .card-zoom:hover .card-zoom-text {
+      @apply scale-100;
+   }
+
+
 
    .skills {
       @apply w-14 sm:w-20 md:w-24 mx-auto;
