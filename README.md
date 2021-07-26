@@ -1,4 +1,5 @@
 # sprodi.github.io
+https://www.seanprodi.com
 My Online Portfolio (Work in Progress)
 
 Built with HTML 5 / TailwindCss / Javascript
