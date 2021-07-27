@@ -2741,6 +2741,10 @@ img {
   padding-top: 1rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -3597,6 +3601,14 @@ $tertiary-color: #ffffff;
     flex-direction: row;
   }
 
+  .md\:content-center {
+    align-content: center;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:gap-2 {
     gap: 0.5rem;
   }
@@ -3652,6 +3664,10 @@ $tertiary-color: #ffffff;
     padding: 1.25rem;
   }
 
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
   .md\:pb-1 {
     padding-bottom: 0.25rem;
   }
@@ -3704,6 +3720,10 @@ $tertiary-color: #ffffff;
 @media (min-width: 1024px) {
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .lg\:col-start-2 {
@@ -3792,6 +3812,10 @@ $tertiary-color: #ffffff;
 
   .lg\:h-96 {
     height: 24rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:w-60 {
