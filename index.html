@@ -47,7 +47,7 @@
    
    <header x-data="{ mobileMenuOpen : false }" class="bg-white flex flex-wrap flex-row justify-between md:space-x-4 dark:bg-gray-700 py-6 px-6 relative">
       <a href="/" class="block ">
-        <span class="text-4xl uppercase font-light tracking-widest">Sean Prodi</span>
+        <span class="text-4xl uppercase font-normal tracking-widest">Sean Prodi</span>
       </a>
       
       <div class="flex justify-center items-center mt-1" x-data="{toggle: '0'}">
@@ -91,21 +91,21 @@
       <div class="intro md:col-span-2 lg:col-span-1">
          <!-- INTRO  -->
          <div class="px-2 mx-auto max-w-2xl md:mt-8">
-            <img draggable="false" src="/static/sean-blue.jpg" class="rounded-xl -mb-13">
+            <img draggable="false" src="/static/sean-blue.jpg" class="rounded-xl md:rounded-xl -mb-13">
          </div>
       </div>
    
 
-      <div class="text-lg md:text-2xl md:col-span-2 lg:col-span-1 lg:mt-16 px-6 lg:px-6 py-6 dark:text-white mx-auto max-w-2xl animate-fade-in-down">
+      <div class="text-lg md:text-2xl md:col-span-2 lg:col-span-1 px-6 lg:px-6 py-6 dark:text-white mx-auto max-w-2xl animate-fade-in-down">
          <h1 class="text-5xl text-white  dark:text-white lg:text-black font-semibold mb-2">Hi I'm Sean!</h1><p class="text-3xl md:text-4xl leading-snug md:leading-snug font-bold"><span class="bg-trueGray-900 lg:bg-gray-600 bg-opacity-70 text-white animate-cc2 px-2 rounded">Graphic Designer </span><br><span class="px-2 animation-delay bg-trueGray-900 lg:bg-gray-600 bg-opacity-70 text-white animate-cc2 rounded">Full Stack Developer</span></p>
          <p class="mt-6 leading-8">
-            Based in Southern California, I have been working professionally as a Graphic Designer from San Diego to Los Angeles since 2013.
+            Based in Southern California, I have been working professionally as a Graphic Designer from San Diego to Los Angeles since 2013. During the pandemic, I have been doing freelance Graphic Design and went through a coding bootcamp to become a Full Stack Web Developer.
          </p> 
       </div>
 
       <!-- SOCIAL -->
       <div class="py-4 flex items-center justify-center md:col-span-2 lg:col-span-1 lg:col-start-2 lg:justify-center">
-         <div class="text-2xl md:text-4xl grid grid-flow-col auto-cols-max gap-12 md:mt-0 md:pb-16 lg:h-0">
+         <div class="text-2xl md:text-4xl grid grid-flow-col auto-cols-max gap-12 md:-mt-8 md:pb-16 lg:h-0">
             <div class="hover:text-pink-500"><a href="https://www.instagram.com/seanprodi" target="_blank"><i class="fab fa-instagram"></i></a></div>
             <div class="hover:text-green-500"><a href="https://github.com/sprodi/" target="_blank"><i class="fab fa-github"></i></a></div>
             <div class="hover:text-blue-500"><a href="http://www.linkedin.com/in/seanprodi" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
@@ -126,10 +126,19 @@
 
    <div id="projects" class="lg:grid lg:grid-cols-3 lg:gap-5 lg:max-w-7xl lg:mx-auto lg:justify-center lg:mt-5 lg:px-5">
       <div class="card">
+         <a href="freelance/">
+            <div class="card-zoom">
+               <div class="card-zoom-image bg-freelance"></div>
+               <div class="card-zoom-text bg-blue-800 w-full px-30 md:pb-1.5 bg-opacity-80 ">FREELANCE<p class="card-desc">Graphic Design</p></div>
+            </div>
+         </a>
+      </div>
+
+      <div class="card">
          <a href="plantr/">
             <div class="card-zoom">
                <div class="card-zoom-image bg-plantr"></div>
-               <div class="card-zoom-text bg-green-900 px-16 md:pb-1.5 bg-opacity-80 rounded-2xl">PLANTR<p class="card-desc">Website</p></div>
+               <div class="card-zoom-text bg-green-900 w-full px-30 md:pb-1.5 bg-opacity-80 ">PLANTR<p class="card-desc">Website</p></div>
             </div>
          </a>
       </div>
@@ -138,16 +147,7 @@
          <a href="moves/">
             <div class="card-zoom">
                <div class="card-zoom-image bg-moves"></div>
-               <div class="card-zoom-text bg-pink-900 px-16 md:pb-1.5 bg-opacity-80 rounded-2xl">MOVES<p class="card-desc">Graphic Design</p></div>
-            </div>
-         </a>
-      </div>
-
-      <div class="card">
-         <a href="freelance/">
-            <div class="card-zoom">
-               <div class="card-zoom-image bg-freelance"></div>
-               <div class="card-zoom-text bg-blue-800 px-10 md:pb-1.5 bg-opacity-80 rounded-2xl">FREELANCE<p class="card-desc">Graphic Design</p></div>
+               <div class="card-zoom-text bg-pink-900 w-full px-30 md:pb-1.5 bg-opacity-80 ">MOVES<p class="card-desc">Graphic Design</p></div>
             </div>
          </a>
       </div>
@@ -156,7 +156,7 @@
          <a href="misc/">
             <div class="card-zoom">
                <div class="card-zoom-image bg-misc"></div>
-               <div class="card-zoom-text bg-yellow-700 px-16 md:pb-1.5 bg-opacity-80 rounded-2xl">MISC.<p class="card-desc">Graphic Design</p></div>
+               <div class="card-zoom-text bg-yellow-700 w-full px-30 md:pb-1.5 bg-opacity-80 ">MISC.<p class="card-desc">Graphic Design</p></div>
             </div>
          </a>
       </div>
@@ -165,7 +165,7 @@
          <a href="merch/">
             <div class="card-zoom">
                <div class="card-zoom-image bg-merch"></div>
-               <div class="card-zoom-text bg-fuchsia-800 px-14 md:pb-1.5 bg-opacity-80 rounded-2xl">MERCH.<p class="card-desc">Graphic Design</p></div>
+               <div class="card-zoom-text bg-fuchsia-800 w-full px-30 md:pb-1.5 bg-opacity-80 ">MERCH.<p class="card-desc">Graphic Design</p></div>
             </div>
          </a>
       </div>
@@ -174,7 +174,7 @@
          <a href="logos/">
             <div class="card-zoom">
                <div class="card-zoom-image bg-logos"></div>
-               <div class="card-zoom-text bg-cyan-700 px-16 md:pb-1.5 bg-opacity-80 rounded-2xl">LOGOS<p class="card-desc">Graphic Design</p></div>
+               <div class="card-zoom-text bg-cyan-700 w-full px-30 md:pb-1.5 bg-opacity-80 ">LOGOS<p class="card-desc">Graphic Design</p></div>
             </div>
          </a>
       </div>
@@ -183,7 +183,7 @@
          <a href="blender/">
             <div class="card-zoom">
                <div class="card-zoom-image bg-blender"></div>
-               <div class="card-zoom-text bg-yellow-900 px-16 md:pb-1.5 bg-opacity-80 rounded-2xl">BLENDER<p class="card-desc">3D Modeling</p></div>
+               <div class="card-zoom-text bg-yellow-900 w-full px-30 md:pb-1.5 bg-opacity-80 ">BLENDER<p class="card-desc">3D Modeling</p></div>
             </div>
          </a>
       </div>
@@ -217,7 +217,7 @@
 
    <!-- SOCIAL -->
    <div class="py-4 flex items-center justify-center md:col-span-2 lg:col-span-1 lg:col-start-2 lg:justify-center">
-      <div class="text-2xl md:text-4xl grid grid-flow-col auto-cols-max gap-12 md:mt-10 md:pb-16 lg:h-0">
+      <div class="text-lg md:text-2xl grid grid-flow-col auto-cols-max gap-12 md:mt-10 md:pb-16 lg:h-0">
          <div class="hover:text-pink-500"><a href="https://www.instagram.com/seanprodi" target="_blank"><i class="fab fa-instagram"></i></a></div>
          <div class="hover:text-green-500"><a href="https://github.com/sprodi/" target="_blank"><i class="fab fa-github"></i></a></div>
          <div class="hover:text-blue-500"><a href="http://www.linkedin.com/in/seanprodi" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>

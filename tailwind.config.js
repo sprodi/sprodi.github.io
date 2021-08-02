@@ -9,6 +9,9 @@ module.exports = {
       './**/*.js',
    ],
    theme: {
+      letterSpacing: {
+         widest: '.5em',
+      },
       fontSize: {
          '2xs': '.5rem',
          'xs': '.75rem',
@@ -77,7 +80,7 @@ module.exports = {
             'spotify': "url('/static/app/icons/spotify.svg')",
             'plantr': "url('/static/plantr-01.png')",
             'moves': "url('/static/moves.jpg')",
-            'freelance': "url('/static/freelance.jpg')",
+            'freelance': "url('/static/freelance/joeanddeb-website.png')",
             'misc': "url('/static/misc.jpg')",
             'merch': "url('/static/merch.jpg')",
             'logos': "url('/static/logos.jpg')",

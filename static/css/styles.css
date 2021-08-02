@@ -43,7 +43,7 @@ $tertiary-color: #ffffff;
    }
 
    .card-zoom {
-      @apply relative flex items-center justify-center overflow-hidden shadow-2xl w-full h-52 md:h-72 rounded-3xl;
+      @apply relative flex items-center justify-center overflow-hidden shadow-2xl w-full h-52 md:h-72 rounded;
    }
 
    .card-zoom-image {
@@ -59,7 +59,7 @@ $tertiary-color: #ffffff;
    }
 
    .card-zoom:hover .card-zoom-text {
-      @apply scale-100;
+      @apply scale-100 opacity-0;
    }
 
 

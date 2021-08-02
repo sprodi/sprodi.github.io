@@ -639,7 +639,7 @@ video {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1.25rem;
-  letter-spacing: 0.1em;
+  letter-spacing: .5em;
 }
 
 @media (min-width: 1024px) {
@@ -656,7 +656,7 @@ video {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 1.5rem;
+  border-radius: 0.25rem;
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -727,6 +727,7 @@ video {
 .card-zoom:hover .card-zoom-text {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
+  opacity: 0;
 }
 
 .skills {
@@ -2147,10 +2148,6 @@ img {
   border-radius: 0.75rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -2487,7 +2484,7 @@ img {
 }
 
 .bg-freelance {
-  background-image: url('/static/freelance.jpg');
+  background-image: url('/static/freelance/joeanddeb-website.png');
 }
 
 .bg-misc {
@@ -2693,16 +2690,6 @@ img {
   padding-right: 2.5rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2849,6 +2836,10 @@ img {
   font-weight: 300;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -2950,12 +2941,13 @@ img {
   line-height: 2;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
+.tracking-widest {
+  letter-spacing: .5em;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
+.text-fuchsia-500 {
+  --tw-text-opacity: 1;
+  color: rgba(217, 70, 239, var(--tw-text-opacity));
 }
 
 .text-fuchsia-800 {
@@ -3508,6 +3500,10 @@ $tertiary-color: #ffffff;
     margin-top: -0.75rem;
   }
 
+  .md\:-mt-8 {
+    margin-top: -2rem;
+  }
+
   .md\:-mt-14 {
     margin-top: -3.5rem;
   }
@@ -3631,6 +3627,10 @@ $tertiary-color: #ffffff;
 
   .md\:rounded-lg {
     border-radius: 0.5rem;
+  }
+
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
   }
 
   .md\:rounded-2xl {
