@@ -39,15 +39,15 @@
 
 </head>
 
-<body class="dark:bg-gray-700 text-black dark:text-white lg:max-w-7xl lg:mx-auto">
+<body class="dark:bg-gray-900 text-black dark:text-white lg:max-w-7xl lg:mx-auto">
    <!-- Google Tag Manager (noscript) -->
    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVHK7S3"
    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <!-- End Google Tag Manager (noscript) -->
    
-   <header x-data="{ mobileMenuOpen : false }" class="bg-white flex flex-wrap flex-row justify-between md:space-x-4 dark:bg-gray-700 py-6 px-6 relative">
+   <header x-data="{ mobileMenuOpen : false }" class="bg-white flex flex-wrap flex-row justify-between md:space-x-4 dark:bg-gray-900 py-6 px-6 relative">
       <a href="/" class="block ">
-        <span class="text-4xl uppercase font-light tracking-widest">Sean Prodi</span>
+        <span class="text-4xl uppercase font-light tracking-wider">Sean Prodi</span>
       </a>
       
       <div class="flex justify-center items-center mt-1" x-data="{toggle: '0'}">
@@ -73,12 +73,12 @@
       </div>
 
 
-      <button @click="mobileMenuOpen = !mobileMenuOpen"  class="inline-block md:hidden w-8 h-8 mt-1 bg-white dark:bg-trueGray-700 dark:text-white p-1">
+      <button @click="mobileMenuOpen = !mobileMenuOpen"  class="inline-block md:hidden w-8 h-8 mt-1 bg-white dark:bg-gray-900 dark:text-white p-1">
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': mobileMenuOpen,' -translate-y-1.5': !mobileMenuOpen }"></span>
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': mobileMenuOpen } "></span>
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': mobileMenuOpen, ' translate-y-1.5': !mobileMenuOpen}"></span>
       </button>
-      <nav class="bg-gray-800 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
+      <nav class="bg-gray-900 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
          <a href="#" class="block py-1 text-blue-600">Home</a>
          <a href="#projects" class="block py-1 text-white md:text-black lg:text-black lg:dark:text-white">Projects</a>
          <a href="#skills" class="block py-1 text-white md:text-black lg:text-black lg:dark:text-white">Skills</a>
@@ -97,7 +97,7 @@
    
 
       <div class="text-lg md:text-2xl md:col-span-2 lg:col-span-1 px-6 lg:px-6 py-6 dark:text-white mx-auto max-w-2xl animate-fade-in-down">
-         <h1 class="text-5xl text-white  dark:text-white lg:text-black font-semibold mb-2">Hi I'm Sean!</h1><p class="text-3xl md:text-4xl leading-snug md:leading-relaxed font-bold"><span class="bg-trueGray-900 lg:bg-gray-600 bg-opacity-70 text-white animate-cc2 px-2 rounded">Graphic Designer </span><br><span class="px-2 animation-delay bg-trueGray-900 lg:bg-gray-600 bg-opacity-70 text-white animate-cc2 rounded">Full Stack Developer</span></p>
+         <h1 class="text-5xl text-white dark:text-white lg:text-black font-semibold mb-2">Hi I'm Sean!</h1><p class="text-2xl md:text-4xl leading-snug md:leading-relaxed font-bold"><span class="bg-trueGray-900 lg:bg-gray-600 bg-opacity-70 text-white animate-cc2 px-2 rounded">Graphic Designer </span><br><span class="px-2 animation-delay bg-trueGray-900 lg:bg-gray-600 bg-opacity-70 text-white animate-cc2 rounded">Full Stack Developer</span></p>
          <p class="mt-6 leading-8">
             Based in Southern California, I have been working professionally as a Graphic Designer from San Diego to Los Angeles since 2013. During the pandemic, I have been doing freelance Graphic Design and went through a coding bootcamp to become a Full Stack Web Developer.
          </p> 
@@ -114,7 +114,7 @@
       </div>
 
       <div class="md:hidden flex items-center justify-center h-36 text-black dark:text-white">
-         <a href="#skills">
+         <a href="#projects">
             <div class="animate-bounce text-center">
                Scroll
                <p class="text-4xl"><i class="fas fa-caret-down"></i></p>
@@ -124,11 +124,11 @@
       </div> 
    </div>
 
-   <div id="projects" class="lg:grid lg:grid-cols-3 lg:gap-5 lg:max-w-7xl lg:mx-auto lg:justify-center lg:mt-5 lg:px-5">
-      <div class="card">
+   <div id="projects" class="lg:grid lg:grid-cols-2 lg:gap-5 lg:max-w-7xl lg:mx-auto lg:justify-center lg:mt-5 lg:px-5">
+      <div class="card col-span-2">
          <a href="freelance/">
             <div class="card-zoom">
-               <div class="card-zoom-image bg-freelance"></div>
+               <div class="card-zoom-image bg-freelance md:bg-bottom-4"></div>
                <div class="card-zoom-text bg-blue-800 w-full px-30 md:pb-1.5 bg-opacity-80 ">FREELANCE<p class="card-desc">Graphic Design</p></div>
             </div>
          </a>
