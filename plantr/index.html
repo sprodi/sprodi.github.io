@@ -78,7 +78,7 @@
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': mobileMenuOpen } "></span>
          <span aria-hidden="true" class="block absolute rounded-xl h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': mobileMenuOpen, ' translate-y-1.5': !mobileMenuOpen}"></span>
       </button>
-      <nav class="bg-gray-900 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
+      <nav class="bg-gray-900 absolute md:relative top-20 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto shadow-lg rounded-b md:rounded-none md:shadow-none md:bg-transparent p-6 pt-4 mt-3 md:p-0 " :class="{  'flex animate-menu-down' : mobileMenuOpen , 'hidden' : !mobileMenuOpen }"  @click.away="mobileMenuOpen = false">
          <a href="#" class="block py-1 text-blue-600">Home</a>
          <a href="#projects" class="block py-1 text-white md:text-black lg:text-black lg:dark:text-white">Projects</a>
          <a href="#skills" class="block py-1 text-white md:text-black lg:text-black lg:dark:text-white">Skills</a>
