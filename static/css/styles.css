@@ -51,7 +51,7 @@ $tertiary-color: #ffffff;
    }
 
    .card-zoom-text {
-      @apply absolute text-3xl md:text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-100 text-center h-4/6 justify-center content-center;
+      @apply absolute text-3xl md:text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-100 text-center h-full justify-center content-center;
    }  
 
    .card-zoom:hover .card-zoom-image {
