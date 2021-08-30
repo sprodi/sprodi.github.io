@@ -39,7 +39,7 @@ $tertiary-color: #ffffff;
    }
 
    .card-desc {
-      @apply relative flex items-center justify-center overflow-hidden text-2xs -mt-3 pb-2 px-10 text-center uppercase font-normal tracking-widest leading-5 lg:leading-normal;
+      @apply relative flex items-center justify-center overflow-hidden text-2xs -mt-3 px-10 text-center uppercase font-normal tracking-widest leading-5 lg:leading-normal;
    }
 
    .card-zoom {
@@ -51,7 +51,7 @@ $tertiary-color: #ffffff;
    }
 
    .card-zoom-text {
-      @apply absolute text-3xl md:text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-100 text-center;
+      @apply absolute text-3xl md:text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-100 text-center h-4/6 justify-center content-center;
    }  
 
    .card-zoom:hover .card-zoom-image {

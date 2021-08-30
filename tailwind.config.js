@@ -92,13 +92,13 @@ module.exports = {
             'github-2': "url('/static/app/icons/github-2.svg')",
             'email': "url('/static/app/icons/email.svg')",
             'spotify': "url('/static/app/icons/spotify.svg')",
-            'plantr': "url('/static/plantr-01.png')",
+            'plantr': "url('/static/plantr-01.jpg')",
             'moves': "url('/static/moves.jpg')",
             'freelance': "url('/static/freelance/joeanddeb-website.png')",
             'misc': "url('/static/misc.jpg')",
             'merch': "url('/static/merch.jpg')",
             'logos': "url('/static/logos.jpg')",
-            'blender': "url('/static/blender.png')",
+            'blender': "url('/static/blender.jpg')",
 
 
          }),
