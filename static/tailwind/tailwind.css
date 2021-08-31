@@ -3771,6 +3771,10 @@ $tertiary-color: #ffffff;
     padding-bottom: 1.25rem;
   }
 
+  .lg\:text-xs {
+    font-size: .75rem;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
   }
